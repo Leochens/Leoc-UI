@@ -1,0 +1,288 @@
+@charset:'utf8';
+/* 清除默认样式 */
+
+/*清除内外边距*/
+html,body,h1,h2,h3,h4,h5,h6,textarea,input,button,
+small,div,span,ul,ol,li,table,legend,td,tt,th,tr,
+fieldset,blockquote,button,input,select,option,a{
+    margin: 0;
+    padding: 0;
+}
+/*清除a下划线*/
+a{
+    text-decoration: none;
+
+}
+/*扶正斜体*/
+i,em{
+    font-style: normal;
+}
+
+/*清除列表样式*/
+ul,ol,li{
+    list-style: none;
+}
+
+/*链接里的img无边框*/
+img{
+    border: none;
+}
+
+/*表格和div自动换行*/
+table,div{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+button,input{
+    border: none;
+    border: #ddd;
+}
+
+
+/*禁止拖动*/
+textarea{
+    resize: none;
+}
+
+*:before,
+*:after{
+    clear: both;
+}
+
+//函数
+.size(@w,@h){
+    width: @w;height: @h;
+}
+.w(@w)
+{
+    width: @w;
+}
+.h(@h)
+{
+    height: @h;
+}
+.border{
+
+}
+//兼容性flex
+.flex(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;    
+}
+//兼容性
+.transform(@x,@y){
+-webkit-transform: translate(@x, @y);
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);    
+}
+//兼容性
+.transition(@time,@method){
+ -webkit-transition: -webkit-transform @time @method;
+  transition: -webkit-transform @time @method;
+  -o-transition: -o-transform @time @method;
+  transition: transform @time @method;    
+}
+.translate-3d(@x,@y,@z){
+ -webkit-transform: translate3d(@x,@y,@z);
+            transform: translate3d(@x,@y,@z);    
+}
+.flex-h-center{
+-webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;  
+}
+.flex-v-center{
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;    
+}
+/********************* 基础样式设置 ******************/
+
+/*基础尺寸设置*/
+//尺寸函数
+
+
+html,body{
+    .size(100%,100%);
+}
+
+h1,.h1{
+
+}
+h2,.h2{
+
+}
+h3,.h3{
+
+}
+h4,.h4{
+
+}
+h5,.h5{
+
+}
+h6,.h6{
+
+}
+
+button{
+
+}
+input{
+
+}
+
+i{
+
+}
+
+
+
+/********************* 自有样式 ******************/
+/*工具类*/
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.float-none{
+    float: none;
+}
+.margin-auto{
+    margin: 0 auto;
+}
+/*定值块*/
+
+/*绝对定值*/
+.H-100{
+    .size(100%,100px);
+}
+.H-200{
+    .size(100%,200px);
+}
+.H-300{
+    .size(100%,300px);
+}
+.H-400{
+    .size(100%,400px);
+}
+.H-500{
+    .size(100%,500px);
+}
+.H-600{
+    .size(100%,600px);
+}
+.H-all{
+    .size(100%,100%);
+}
+.W-100{
+    .size(100px,100%);
+}
+.W-200{
+    .size(200,100%);
+}
+.W-300{
+    .size(300,100%);
+}
+.W-400{
+    .size(400,100%);
+}
+.W-500{
+    .size(500,100%);
+}
+.W-600{
+    .size(600,100%);
+}
+.W-all{
+    .size(100%,100%);
+}
+/*可叠加定值*/
+.w-100{
+    .w(100px);
+}
+.w-200{
+    .w(200px);
+}
+.w-300{
+    .w(300px);
+}
+.w-400{
+    .w(400px);
+}
+.w-500{
+    .w(500px);
+}
+.w-600{
+    .w(600px);
+}
+.w-all{
+    .w(100%);;
+}
+.h-100{
+    .h(100px);
+}
+.h-200{
+    .h(200px);
+}
+.h-300{
+    .h(300px);
+}
+.h-400{
+    .h(400px);
+}
+.h-500{
+    .h(500px);
+}
+.h-600{
+    .h(600px);
+}
+.h-all{
+    .h(100%);
+}
+
+/*面板*/
+/*按钮*/
+/*输入框*/
+/*弹出框*/
+/*消息丸*/
+
+/*列表*/
+
+/*遮罩层*/
+
+/*表单*/
+/*下拉列表*/
+/*导航*/
+/*侧边栏*/
+
+/*小卡片*/
+
+/*轮播图*/
+
+/*搜索框*/
+
+/*引语*/
+
+/*大字板*/
+/*********************   颜色类     ******************/
+.danger{
+    background-color: #FF6347;
+}
+
+
+
+/********************* 栅格系统 ******************/
+
+
+/********************* 屏幕适配 ******************/
+
+
+
+/********************* 兼容性问题解决 ******************/
+
