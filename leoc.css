@@ -207,6 +207,84 @@ body {
 }
 /*面板*/
 /*按钮*/
+button {
+  outline: none;
+  background-color: #ccc;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn.disabled,
+.btn.disabled:hover {
+  background-color: #aaa;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn-default {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #008B8B;
+}
+.btn-default:hover {
+  background-color: #046E6E;
+}
+.btn-danger {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #FF0000;
+}
+.btn-danger:hover {
+  background-color: #8B0000;
+}
+.btn-smile {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #FFA500;
+}
+.btn-smile:hover {
+  background-color: #D68B00;
+}
+.btn-warning {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #F0E68C;
+}
+.btn-warning:hover {
+  background-color: #D4C968;
+}
+.btn-success {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #00FA9A;
+}
+.btn-success:hover {
+  background-color: #06CC80;
+}
 /*输入框*/
 /*弹出框*/
 /*消息丸*/
@@ -223,7 +301,34 @@ body {
 /*大字板*/
 /*********************   颜色类     ******************/
 .danger {
-  background-color: #FF6347;
+  background-color: #FF0000;
+}
+.danger-hover {
+  background-color: #8B0000;
+}
+.default {
+  background-color: #008B8B;
+}
+.default-hover {
+  background-color: #046E6E;
+}
+.smile {
+  background-color: #FFA500;
+}
+.smile-hover {
+  background-color: #D68B00;
+}
+.warning {
+  background-color: #F0E68C;
+}
+.warning-hover {
+  background-color: #D4C968;
+}
+.success {
+  background-color: #00FA9A;
+}
+.success-hover {
+  background-color: #06CC80;
 }
 /********************* 栅格系统 ******************/
 /********************* 屏幕适配 ******************/

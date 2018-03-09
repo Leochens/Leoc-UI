@@ -222,7 +222,7 @@ i{
     .w(600px);
 }
 .w-all{
-    .w(100%);;
+    .w(100%);
 }
 .h-100{
     .h(100px);
@@ -248,6 +248,66 @@ i{
 
 /*面板*/
 /*按钮*/
+button{
+    outline: none;
+    background-color: #ccc;
+}
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    color:#fff;
+    cursor:pointer;
+}
+.btn.active{
+    
+}
+.btn:hover{
+   
+}
+.btn.disabled,.btn.disabled:hover{
+    background-color: #aaa;
+    opacity: 0.6;
+    cursor:not-allowed;
+}
+
+.btn-default{
+    .btn;
+    .default;
+    &:hover{
+        .default-hover;
+    }
+}
+.btn-danger{
+    .btn;
+    .danger;
+    &:hover{
+        .danger-hover;
+    }    
+}
+
+.btn-smile{
+    .btn;
+    .smile;
+    &:hover{
+        .smile-hover;
+    }    
+}
+.btn-warning{
+    .btn;
+    .warning;
+    &:hover{
+        .warning-hover;
+    }    
+}
+.btn-success{
+    .btn;
+    .success;
+    &:hover{
+        .success-hover;
+    }    
+}
 /*输入框*/
 /*弹出框*/
 /*消息丸*/
@@ -272,11 +332,38 @@ i{
 /*大字板*/
 /*********************   颜色类     ******************/
 .danger{
-    background-color: #FF6347;
+    background-color: #FF0000;
 }
+.danger-hover{
+    background-color: #8B0000;
+}
+.default{
+    background-color: #008B8B;
+}
+.default-hover{
+    background-color: #046E6E;
+}
+.smile{
+    background-color: #FFA500;
+}
+.smile-hover{
+    background-color: #D68B00;
+}
+.warning{
+    background-color: #F0E68C;
+}
+.warning-hover{
+    background-color: #D4C968;
+}
+.success{
+    background-color: #00FA9A;
+}
+.success-hover{
+    background-color: #06CC80;
+}
+.info{
 
-
-
+}
 /********************* 栅格系统 ******************/
 
 
