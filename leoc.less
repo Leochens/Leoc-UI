@@ -203,6 +203,10 @@ i{
     width: 100%;
     div,table,p{
         display: inline-block;
+        vertical-align: top;
+    }
+    img,span{
+        vertical-align: middle;
     }
 
 }
@@ -262,11 +266,21 @@ i{
     font-weight: 600;
     text-align: center;
     color:@white;
+    cursor: pointer;
     &:hover{
-    .info-hover;
+        .transition-color;
+        .info;
     }
 }
+.budge.danger{
+    border:1px solid @red;
+    &:hover{
+        .transition-color;
+        border:1px solid @m-red;
 
+        background-color: @m-red ;
+    }
+}
 
 
 /*表格与列表*/
@@ -281,6 +295,99 @@ i{
 
 /*小卡片*/
 
+.card{
+    padding: 14px;
+    min-height: 100px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+    max-width: 400px;
+    box-sizing: border-box;
+
+    h3.head,.head{
+        .h3;
+    }
+    p.content,p{
+        line-height: 1.3;
+    }
+    h3.foot,h3{
+        .h3;
+    }
+    hr{
+       .default-hover;
+    }
+    //默认占满宽
+    img{
+        border:1px solid transparent;
+        width: 100%;
+        border-radius: inherit;
+    }
+    button{
+        .btn;
+        .btn-info;
+        width: 100%;
+    }
+
+}
+//内置图片尺寸偏移问题
+//将图片的border值为none
+//border-radius值为inherit
+//父级的border-top值为none 为了显示图片的轮廓没有瑕疵
+.card.figure{
+    padding: 0;
+    padding-bottom: 6px;
+    border-top: none;/*note*/
+    img{
+        padding-top: -1px;
+        border-radius: inherit;
+        height: auto;
+        border:none;
+        width: 100%;
+    }
+}
+.card.recommend{
+    
+    @pd:12px;
+    padding: 0 0 15px 0;
+    border-top: none;/*note*/
+
+    img{
+        display: block;
+        border-radius: inherit;
+        padding-top: -1px;
+        border:none;
+        height: auto;
+        width: 100%;
+
+    }
+    span{
+        .h4;
+        padding: 3px @pd; 
+        font-weight: 500;
+    }
+    div.mark{
+        display: block;
+        color:@m-grey;
+        padding: 0 @pd;
+        font-size: 12px;
+    }
+    p.discribe{
+        font-size: 12px;
+        padding:0 @pd;
+        display: block;
+        font-weight: 400;
+    }
+    div.extra{
+        .h4;
+        padding: 0 @pd;
+        display: block;
+        color: @m-grey;
+        line-height: 1.6;
+        border-top: 1px solid @m-grey;
+        
+    }
+
+}
 /*轮播图*/
 
 /*搜索框*/
@@ -288,21 +395,12 @@ i{
 /*引语*/
 //bug : 绿条不能自动增大
 //解决 ： 换用border-left
-.quotes{
-    padding: 15px;
-    min-height: 38px;
-    background-color:#eee;
-    line-height: 38px; 
-    margin: 10px; 
-    border-left: 4px solid @d-green;
-    overflow: auto;
-    vertical-align: middle;
-}
+@import url(quotes.less);
 /*大字板*/
 
 /*分隔条*/
 hr{
-    .default;
+    background-color: @m-grey;
 }
 /*可以插入文本的分割线*/
 .hr-content{

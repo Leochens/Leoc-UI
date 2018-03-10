@@ -271,6 +271,11 @@ h6,
 .row table,
 .row p {
   display: inline-block;
+  vertical-align: top;
+}
+.row img,
+.row span {
+  vertical-align: middle;
 }
 .container.article {
   padding: 48px;
@@ -679,10 +684,22 @@ button {
   font-weight: 600;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 }
 .budge:hover {
-  background-color: #4169e1;
-  border-color: #4169e1;
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+  background-color: #6495ed;
+  border-color: #6495ed;
+}
+.budge.danger {
+  border: 1px solid #ff0000;
+}
+.budge.danger:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+  border: 1px solid #ff9b87;
+  background-color: #ff9b87;
 }
 /*表格与列表*/
 table.table,
@@ -953,6 +970,117 @@ table.table .tr-warning:hover,
 /*导航*/
 /*侧边栏*/
 /*小卡片*/
+.card {
+  padding: 14px;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 200px;
+  max-width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.card h3.head,
+.card .head {
+  font-family: 'microsoft yahei';
+  font-weight: 300;
+  font-size: 20px;
+}
+.card p.content,
+.card p {
+  line-height: 1.3;
+}
+.card h3.foot,
+.card h3 {
+  font-family: 'microsoft yahei';
+  font-weight: 300;
+  font-size: 20px;
+}
+.card hr {
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+}
+.card img {
+  border: 1px solid transparent;
+  width: 100%;
+  border-radius: inherit;
+}
+.card button {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.432;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #6495ed;
+  border-color: #6495ed;
+  width: 100%;
+}
+.card button:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+  background-color: #4169e1;
+  border-color: #4169e1;
+}
+.card.figure {
+  padding: 0;
+  padding-bottom: 6px;
+  border-top: none;
+  /*note*/
+}
+.card.figure img {
+  padding-top: -1px;
+  border-radius: inherit;
+  height: auto;
+  border: none;
+  width: 100%;
+}
+.card.recommend {
+  padding: 0 0 15px 0;
+  border-top: none;
+  /*note*/
+}
+.card.recommend img {
+  display: block;
+  border-radius: inherit;
+  padding-top: -1px;
+  border: none;
+  height: auto;
+  width: 100%;
+}
+.card.recommend span {
+  font-family: 'microsoft yahei';
+  font-weight: 300;
+  font-size: 16px;
+  padding: 3px 12px;
+  font-weight: 500;
+}
+.card.recommend div.mark {
+  display: block;
+  color: #8c8c8c;
+  padding: 0 12px;
+  font-size: 12px;
+}
+.card.recommend p.discribe {
+  font-size: 12px;
+  padding: 0 12px;
+  display: block;
+  font-weight: 400;
+}
+.card.recommend div.extra {
+  font-family: 'microsoft yahei';
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 12px;
+  display: block;
+  color: #8c8c8c;
+  line-height: 1.6;
+  border-top: 1px solid #8c8c8c;
+}
 /*轮播图*/
 /*搜索框*/
 /*引语*/
@@ -966,11 +1094,24 @@ table.table .tr-warning:hover,
   overflow: auto;
   vertical-align: middle;
 }
+.quotes.quotes-sm {
+  min-height: 25px;
+  line-height: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+.quotes.quotes-lg {
+  min-height: 50px;
+  line-height: 50px;
+  margin: 10px;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 500;
+}
 /*大字板*/
 /*分隔条*/
 hr {
-  background-color: #34495e;
-  border-color: #34495e;
+  background-color: #8c8c8c;
 }
 /*可以插入文本的分割线*/
 .hr-content {
