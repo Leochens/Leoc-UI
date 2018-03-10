@@ -85,6 +85,12 @@ textarea{
   -o-transition: -o-transform @time @method;
   transition: transform @time @method;    
 }
+.transition-color{
+-webkit-transition:0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+  -o-transition: 0.3s background-color ease-out;
+  transition:0.3s background-color ease-out;
+}
 .translate-3d(@x,@y,@z){
  -webkit-transform: translate3d(@x,@y,@z);
             transform: translate3d(@x,@y,@z);    
@@ -174,91 +180,7 @@ i{
 /*定值块*/
 
 /*绝对定值*/
-.H-100{
-    .size(100%,100px);
-}
-.H-200{
-    .size(100%,200px);
-}
-.H-300{
-    .size(100%,300px);
-}
-.H-400{
-    .size(100%,400px);
-}
-.H-500{
-    .size(100%,500px);
-}
-.H-600{
-    .size(100%,600px);
-}
-.H-all{
-    .size(100%,100%);
-}
-.W-100{
-    .size(100px,100%);
-}
-.W-200{
-    .size(200,100%);
-}
-.W-300{
-    .size(300,100%);
-}
-.W-400{
-    .size(400,100%);
-}
-.W-500{
-    .size(500,100%);
-}
-.W-600{
-    .size(600,100%);
-}
-.W-all{
-    .size(100%,100%);
-}
-/*可叠加定值*/
-.w-100{
-    .w(100px);
-}
-.w-200{
-    .w(200px);
-}
-.w-300{
-    .w(300px);
-}
-.w-400{
-    .w(400px);
-}
-.w-500{
-    .w(500px);
-}
-.w-600{
-    .w(600px);
-}
-.w-all{
-    .w(100%);
-}
-.h-100{
-    .h(100px);
-}
-.h-200{
-    .h(200px);
-}
-.h-300{
-    .h(300px);
-}
-.h-400{
-    .h(400px);
-}
-.h-500{
-    .h(500px);
-}
-.h-600{
-    .h(600px);
-}
-.h-all{
-    .h(100%);
-}
+@import url(block.less);
 /*容器*/
 
 .container{
@@ -272,7 +194,100 @@ i{
 /*按钮*/
 @import url(button.less);
 
-/*输入框*/
+
+/*表单*/
+//@import url(form.less);
+.input{
+    padding: 6px 8px;
+    background-color:transparent;
+    border: 2px solid @d-grey;
+    border-radius: 6px;
+    height: 28px; 
+    width: inherit;
+    outline: none;
+    color:@grey;
+    &:focus{
+        border-color: @grey;
+        transition: 0.3s border-color;
+    }
+}
+.input-lg.input{
+    height: 35px!important;
+}
+.input-sm.input{
+    height: 18px!important;
+}
+.input.input-success{
+    .input;
+    color:@green;
+    border-color:@d-green;
+    &:focus{
+        border-color: @green;
+        transition: 0.3s border-color;
+    }    
+}
+.input.input-info{
+    .input;
+    color:@blue;
+    border-color:@d-blue;
+    &:focus{
+        border-color: @blue;
+        transition: 0.3s border-color;
+    }    
+}.input.input-danger{
+    .input;
+    color:@red;
+    border-color:@d-red;
+    &:focus{
+        border-color: @red;
+        transition: 0.3s border-color;
+    }    
+}.input.input-smile{
+    .input;
+    color:@orange;
+    border-color:@d-orange;
+    &:focus{
+        border-color: @orange;
+        transition: 0.3s border-color;
+    }    
+}
+
+//输入框组
+.input-group-inline{
+    input{
+        .input;
+        display: inline-block;
+        //width: 10%;
+        margin: 0 5px;
+    }
+}
+//按钮尺寸的bug
+.input-group-block{
+    //width: 80%;
+    input,.input,
+    input[type="text"],
+    input[type=null],
+    input[type="button"],
+    input[type="submit"],
+    input[type="password"]{
+        //.input;
+        display: block;
+        margin: 5px 0;
+    }
+    input[type="button"],
+    input[type="submit"]{
+
+        .btn-default;
+        //color: @white;
+        //font-size: 18px;
+        vertical-align: middle;
+        outline: none;
+        line-height: 18px;
+        // &:hover{
+        //     .default-hover;
+        // }
+    }
+}
 /*弹出框*/
 /*消息丸*/
 
@@ -280,7 +295,6 @@ i{
 
 /*遮罩层*/
 
-/*表单*/
 /*下拉列表*/
 /*导航*/
 /*侧边栏*/
@@ -311,3 +325,5 @@ hr{
 
 /********************* 兼容性问题解决 ******************/
 
+/*测试**/
+@import url(hack.less);

@@ -1,0 +1,36 @@
+.danger {
+  background-color: #FF0000;
+}
+.danger-hover {
+  background-color: #8B0000;
+}
+.default {
+  background-color: #34495E;
+}
+.default-hover {
+  background-color: #435D78;
+}
+.smile {
+  background-color: #FFA500;
+}
+.smile-hover {
+  background-color: #D68B00;
+}
+.warning {
+  background-color: #F0E68C;
+}
+.warning-hover {
+  background-color: #D4C968;
+}
+.success {
+  background-color: #00FA9A;
+}
+.success-hover {
+  background-color: #06CC80;
+}
+.info {
+  background-color: #4169E1;
+}
+.info-hover {
+  background-color: #6495ED;
+}
