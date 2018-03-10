@@ -1,80 +1,89 @@
 @white:#FFFFFF;
 @d-white:#F9FAFB;
 @normal-grey:#CCCCCC;
-@l-red:#FF7F50;
+
+
+
+@l-red:#FFC4C4;
+@m-red:#FF9B87;
 @red:#FF0000;
-@m-red:#FF6347;
 @d-red:#8B0000;
 
 @l-grey:#eeeeee;
+@m-grey:#8C8C8C;
 @grey:#34495E;
-@d-grey:#34495E;
-@l-orange:#FFB35C;
+@d-grey:#3D3D3D;
+
+@l-orange:#FFDCC4;
+@m-orange:#FFC187;
 @orange:#FFA500;
-@m-orange:#FFAB4A;
 @d-orange:#D68B00;
 
-@l-yellow:#FFFEB8;
-@yello:#F0E68C;
-@m-yellow:#FFFD73;
-@d-yello:#D4C968;
+@l-yellow:#FFFDC4;
+@m-yellow:#FFFB87;
+@yellow:#F0E68C;
+@d-yellow:#D4C968;
 
-@l-green:#94FF88;
+@l-green:#C5FFC4;
+@m-green:#91FF87;
 @green:#00FA9A;
-@m-green:#74E667;
 @d-green:#06CC80;
 
-@l-blue:#75D8FF;
+@l-blue:#C4D4FF;
+@m-blue:#87B1FF;
 @blue:#6495ED;
-@m-blue:#87CEEB;
 @d-blue:#4169E1;
 
-.danger{
-    background-color: #FF0000;
-    border-color: #FF0000;
+@l-pink:#FAC4FF;
+@pink:#FF4DF9;
+@m-pink:#FB87FF;
+@d-pink:#A1069C;
+.danger-hover{
+    background-color: @d-red;
+    border-color: @d-red;
 
 }
-.danger-hover{
-    background-color: #8B0000;
-    border-color: #8B0000;
-}
-.default{
-    background-color: #34495E;
-    border-color: #34495E;
+.danger{
+    background-color: @red;
+    border-color: @red;
 }
 .default-hover{
-    background-color: #435D78;
-    border-color: #435D78;
+    background-color: @d-grey;
+    border-color: @d-grey;
 }
-.smile{
-    background-color: #FFA500;
-    border-color: #FFA500;
+.default{
+    background-color: @grey;
+    border-color: @grey;
 }
 .smile-hover{
-    background-color: #D68B00;
-    border-color: #D68B00;
+    background-color: @d-orange;
+    border-color: @d-orange;
 }
-.warning{
-    background-color: #F0E68C;
-    border-color: #F0E68C;
+.smile{
+    background-color: @orange;
+    border-color: @orange;
 }
 .warning-hover{
-    background-color: #D4C968;
-    border-color: #D4C968;
+    background-color: @d-yellow;
+    border-color: @d-yellow;
 }
-.success{
-    background-color: #00FA9A;
-    border-color: #00FA9A;
+.warning{
+    background-color:@yellow;
+    border-color: @yellow;
 }
 .success-hover{
-    background-color: #06CC80;
-    border-color: #06CC80;
+    background-color: @d-green;
+    border-color: @d-green;
 }
-.info{
-    background-color: #4169E1;
-    border-color: #4169E1;
+.success{
+    background-color: @green;
+    border-color: @green;
 }
 .info-hover{
-    background-color: #6495ED;
-    border-color: #6495ED;
+    background-color: @d-blue;
+    border-color: @d-blue;
+}
+.info{
+    background-color: @blue;
+    border-color: @blue;
 }

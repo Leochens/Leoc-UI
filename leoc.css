@@ -257,11 +257,11 @@ h6,
   border-radius: 6px;
 }
 .container ::-moz-selection {
-  background: #ff7f50;
+  background: #fac4ff;
   color: #34495e;
 }
 .container ::selection {
-  background: #ff7f50;
+  background: #fac4ff;
   color: #34495e;
 }
 .row {
@@ -344,14 +344,14 @@ button {
   font-weight: 300;
   text-align: center;
   vertical-align: middle;
-  background-color: #34495E;
-  border-color: #34495E;
+  background-color: #34495e;
+  border-color: #34495e;
 }
 .btn-default:hover {
   -webkit-transition: 0.3s background-color ease-out;
   transition: 0.3s background-color ease-out;
-  background-color: #435D78;
-  border-color: #435D78;
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
 }
 .btn-danger {
   display: inline-block;
@@ -364,14 +364,14 @@ button {
   font-weight: 300;
   text-align: center;
   vertical-align: middle;
-  background-color: #FF0000;
-  border-color: #FF0000;
+  background-color: #ff0000;
+  border-color: #ff0000;
 }
 .btn-danger:hover {
   -webkit-transition: 0.3s background-color ease-out;
   transition: 0.3s background-color ease-out;
-  background-color: #8B0000;
-  border-color: #8B0000;
+  background-color: #8b0000;
+  border-color: #8b0000;
 }
 .btn-smile {
   display: inline-block;
@@ -384,14 +384,14 @@ button {
   font-weight: 300;
   text-align: center;
   vertical-align: middle;
-  background-color: #FFA500;
-  border-color: #FFA500;
+  background-color: #ffa500;
+  border-color: #ffa500;
 }
 .btn-smile:hover {
   -webkit-transition: 0.3s background-color ease-out;
   transition: 0.3s background-color ease-out;
-  background-color: #D68B00;
-  border-color: #D68B00;
+  background-color: #d68b00;
+  border-color: #d68b00;
 }
 .btn-warning {
   display: inline-block;
@@ -404,14 +404,14 @@ button {
   font-weight: 300;
   text-align: center;
   vertical-align: middle;
-  background-color: #F0E68C;
-  border-color: #F0E68C;
+  background-color: #f0e68c;
+  border-color: #f0e68c;
 }
 .btn-warning:hover {
   -webkit-transition: 0.3s background-color ease-out;
   transition: 0.3s background-color ease-out;
-  background-color: #D4C968;
-  border-color: #D4C968;
+  background-color: #d4c968;
+  border-color: #d4c968;
 }
 .btn-success {
   display: inline-block;
@@ -424,14 +424,14 @@ button {
   font-weight: 300;
   text-align: center;
   vertical-align: middle;
-  background-color: #00FA9A;
-  border-color: #00FA9A;
+  background-color: #00fa9a;
+  border-color: #00fa9a;
 }
 .btn-success:hover {
   -webkit-transition: 0.3s background-color ease-out;
   transition: 0.3s background-color ease-out;
-  background-color: #06CC80;
-  border-color: #06CC80;
+  background-color: #06cc80;
+  border-color: #06cc80;
 }
 .btn-info {
   display: inline-block;
@@ -444,14 +444,14 @@ button {
   font-weight: 300;
   text-align: center;
   vertical-align: middle;
-  background-color: #4169E1;
-  border-color: #4169E1;
+  background-color: #6495ed;
+  border-color: #6495ed;
 }
 .btn-info:hover {
   -webkit-transition: 0.3s background-color ease-out;
   transition: 0.3s background-color ease-out;
-  background-color: #6495ED;
-  border-color: #6495ED;
+  background-color: #4169e1;
+  border-color: #4169e1;
 }
 /*尺寸大小*/
 .btn.btn-lg,
@@ -508,7 +508,7 @@ button {
 .input {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #34495e;
+  border: 2px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -529,7 +529,7 @@ button {
 .input.input-success {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #34495e;
+  border: 2px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -551,7 +551,7 @@ button {
 .input.input-info {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #34495e;
+  border: 2px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -573,7 +573,7 @@ button {
 .input.input-danger {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #34495e;
+  border: 2px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -595,7 +595,7 @@ button {
 .input.input-smile {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #34495e;
+  border: 2px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -617,7 +617,7 @@ button {
 .input-group-inline input {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #34495e;
+  border: 2px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -652,8 +652,8 @@ button {
   cursor: pointer;
   font-weight: 300;
   text-align: center;
-  background-color: #34495E;
-  border-color: #34495E;
+  background-color: #34495e;
+  border-color: #34495e;
   vertical-align: middle;
   outline: none;
   line-height: 18px;
@@ -662,8 +662,8 @@ button {
 .input-group-block input[type="submit"]:hover {
   -webkit-transition: 0.3s background-color ease-out;
   transition: 0.3s background-color ease-out;
-  background-color: #435D78;
-  border-color: #435D78;
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
 }
 /*弹出框*/
 /*消息丸*/
@@ -681,8 +681,8 @@ button {
   color: #ffffff;
 }
 .budge:hover {
-  background-color: #6495ED;
-  border-color: #6495ED;
+  background-color: #4169e1;
+  border-color: #4169e1;
 }
 /*表格与列表*/
 table.table,
@@ -769,7 +769,7 @@ table.table .tr-default:hover,
 table.table .tr-danger,
 .table .tr-danger {
   border: 1px solid #cccccc;
-  background-color: #ff6347;
+  background-color: #ff9b87;
 }
 table.table .tr-danger td,
 .table .tr-danger td {
@@ -796,12 +796,12 @@ table.table .tr-danger:hover,
 }
 table.table .tr-danger:hover,
 .table .tr-danger:hover {
-  background-color: #ff7f50;
+  background-color: #ffc4c4;
 }
 table.table .tr-smile,
 .table .tr-smile {
   border: 1px solid #cccccc;
-  background-color: #ffab4a;
+  background-color: #ffc187;
 }
 table.table .tr-smile td,
 .table .tr-smile td {
@@ -828,12 +828,12 @@ table.table .tr-smile:hover,
 }
 table.table .tr-smile:hover,
 .table .tr-smile:hover {
-  background-color: #ffb35c;
+  background-color: #ffdcc4;
 }
 table.table .tr-info,
 .table .tr-info {
   border: 1px solid #cccccc;
-  background-color: #87ceeb;
+  background-color: #87b1ff;
 }
 table.table .tr-info td,
 .table .tr-info td {
@@ -860,12 +860,12 @@ table.table .tr-info:hover,
 }
 table.table .tr-info:hover,
 .table .tr-info:hover {
-  background-color: #75d8ff;
+  background-color: #c4d4ff;
 }
 table.table .tr-success,
 .table .tr-success {
   border: 1px solid #cccccc;
-  background-color: #74e667;
+  background-color: #91ff87;
 }
 table.table .tr-success td,
 .table .tr-success td {
@@ -892,12 +892,12 @@ table.table .tr-success:hover,
 }
 table.table .tr-success:hover,
 .table .tr-success:hover {
-  background-color: #94ff88;
+  background-color: #c5ffc4;
 }
 table.table .tr-warning,
 .table .tr-warning {
   border: 1px solid #cccccc;
-  background-color: #fffd73;
+  background-color: #fffb87;
 }
 table.table .tr-warning td,
 .table .tr-warning td {
@@ -924,14 +924,14 @@ table.table .tr-warning:hover,
 }
 table.table .tr-warning:hover,
 .table .tr-warning:hover {
-  background-color: #fffeb8;
+  background-color: #fffdc4;
 }
 /*无外边框表格*/
 .table.table-noborder tr th {
   border: 1px solid transparent!important;
 }
 .table.table-noborder tr td {
-  border-right: 1px solid #34495e;
+  border-right: 1px solid #3d3d3d;
   border-top: 1px solid transparent!important;
   border-bottom: 1px solid transparent!important;
   border-left: 1px solid transparent!important;
@@ -969,57 +969,97 @@ table.table .tr-warning:hover,
 /*大字板*/
 /*分隔条*/
 hr {
-  background-color: #34495E;
-  border-color: #34495E;
+  background-color: #34495e;
+  border-color: #34495e;
+}
+/*可以插入文本的分割线*/
+.hr-content {
+  white-space: nowrap;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: table;
+  line-height: 1;
+}
+.hr-content:before,
+.hr-content:after {
+  content: "";
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAACCAYAAACuTHuKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OThBRDY4OUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OThBRDY4QUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5OEFENjg3Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5OEFENjg4Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VU513gAAADVJREFUeNrs0DENACAQBDBIWLGBJQby/mUcJn5sJXQmOQMAAAAAAJqt+2prAAAAAACg2xdgANk6BEVuJgyMAAAAAElFTkSuQmCC);
+  display: table-cell;
+  position: relative;
+  top: 50%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: right 1em top 50%;
+}
+.hr-content:after {
+  background-position: left 1em top 50%;
+}
+.hr-content .item {
+  font-family: 'microsoft yahei';
+  font-weight: 600;
+  font-size: 14px;
+}
+/*无间距分割线*/
+.hr-inblock {
+  border-top: 1px solid #34495e;
+  border-bottom: 1px solid transparent;
+  height: 0;
+  padding: 0;
+  letter-spacing: 0.05rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+  display: block;
 }
 /*********************   颜色类     ******************/
-.danger {
-  background-color: #FF0000;
-  border-color: #FF0000;
-}
 .danger-hover {
-  background-color: #8B0000;
-  border-color: #8B0000;
+  background-color: #8b0000;
+  border-color: #8b0000;
 }
-.default {
-  background-color: #34495E;
-  border-color: #34495E;
+.danger {
+  background-color: #ff0000;
+  border-color: #ff0000;
 }
 .default-hover {
-  background-color: #435D78;
-  border-color: #435D78;
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
 }
-.smile {
-  background-color: #FFA500;
-  border-color: #FFA500;
+.default {
+  background-color: #34495e;
+  border-color: #34495e;
 }
 .smile-hover {
-  background-color: #D68B00;
-  border-color: #D68B00;
+  background-color: #d68b00;
+  border-color: #d68b00;
 }
-.warning {
-  background-color: #F0E68C;
-  border-color: #F0E68C;
+.smile {
+  background-color: #ffa500;
+  border-color: #ffa500;
 }
 .warning-hover {
-  background-color: #D4C968;
-  border-color: #D4C968;
+  background-color: #d4c968;
+  border-color: #d4c968;
 }
-.success {
-  background-color: #00FA9A;
-  border-color: #00FA9A;
+.warning {
+  background-color: #f0e68c;
+  border-color: #f0e68c;
 }
 .success-hover {
-  background-color: #06CC80;
-  border-color: #06CC80;
+  background-color: #06cc80;
+  border-color: #06cc80;
 }
-.info {
-  background-color: #4169E1;
-  border-color: #4169E1;
+.success {
+  background-color: #00fa9a;
+  border-color: #00fa9a;
 }
 .info-hover {
-  background-color: #6495ED;
-  border-color: #6495ED;
+  background-color: #4169e1;
+  border-color: #4169e1;
+}
+.info {
+  background-color: #6495ed;
+  border-color: #6495ed;
 }
 /********************* 栅格系统 ******************/
 /*此处是在bs上做了修改*/
