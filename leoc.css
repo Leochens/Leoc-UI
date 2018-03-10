@@ -605,7 +605,287 @@ button {
 }
 /*弹出框*/
 /*消息丸*/
+.budge {
+  border: 1px solid #6495ed;
+  background: #4169e1;
+  display: inline-block;
+  height: 20px;
+  width: 30px;
+  border-radius: 8px;
+  padding: 6px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+.budge:hover {
+  background-color: #6495ED;
+}
 /*列表*/
+/*表格*/
+table.table,
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+table.table th,
+.table th {
+  padding: 5px 15px;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ccc;
+}
+table.table tr.tr,
+.table tr.tr,
+table.table .tr,
+.table .tr {
+  border: 1px solid #cccccc;
+}
+table.table tr.tr td,
+.table tr.tr td,
+table.table .tr td,
+.table .tr td {
+  padding: 5px 15px;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+table.table tr.tr td > .budge,
+.table tr.tr td > .budge,
+table.table .tr td > .budge,
+.table .tr td > .budge {
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  bottom: 8px;
+  padding: 3px;
+  font-size: 11px;
+}
+table.table tr.tr:hover,
+.table tr.tr:hover,
+table.table .tr:hover,
+.table .tr:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+}
+table.table .tr-default,
+.table .tr-default {
+  border: 1px solid #cccccc;
+  background-color: rgba(250, 250, 250, 0.8);
+}
+table.table .tr-default td,
+.table .tr-default td {
+  padding: 5px 15px;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+table.table .tr-default td > .budge,
+.table .tr-default td > .budge {
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  bottom: 8px;
+  padding: 3px;
+  font-size: 11px;
+}
+table.table .tr-default:hover,
+.table .tr-default:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+}
+table.table .tr-default:hover,
+.table .tr-default:hover {
+  background-color: #ffffff;
+}
+table.table .tr-danger,
+.table .tr-danger {
+  border: 1px solid #cccccc;
+  background-color: #ff6347;
+}
+table.table .tr-danger td,
+.table .tr-danger td {
+  padding: 5px 15px;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+table.table .tr-danger td > .budge,
+.table .tr-danger td > .budge {
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  bottom: 8px;
+  padding: 3px;
+  font-size: 11px;
+}
+table.table .tr-danger:hover,
+.table .tr-danger:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+}
+table.table .tr-danger:hover,
+.table .tr-danger:hover {
+  background-color: #ff7f50;
+}
+table.table .tr-smile,
+.table .tr-smile {
+  border: 1px solid #cccccc;
+  background-color: #ffab4a;
+}
+table.table .tr-smile td,
+.table .tr-smile td {
+  padding: 5px 15px;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+table.table .tr-smile td > .budge,
+.table .tr-smile td > .budge {
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  bottom: 8px;
+  padding: 3px;
+  font-size: 11px;
+}
+table.table .tr-smile:hover,
+.table .tr-smile:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+}
+table.table .tr-smile:hover,
+.table .tr-smile:hover {
+  background-color: #ffb35c;
+}
+table.table .tr-info,
+.table .tr-info {
+  border: 1px solid #cccccc;
+  background-color: #87ceeb;
+}
+table.table .tr-info td,
+.table .tr-info td {
+  padding: 5px 15px;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+table.table .tr-info td > .budge,
+.table .tr-info td > .budge {
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  bottom: 8px;
+  padding: 3px;
+  font-size: 11px;
+}
+table.table .tr-info:hover,
+.table .tr-info:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+}
+table.table .tr-info:hover,
+.table .tr-info:hover {
+  background-color: #75d8ff;
+}
+table.table .tr-success,
+.table .tr-success {
+  border: 1px solid #cccccc;
+  background-color: #74e667;
+}
+table.table .tr-success td,
+.table .tr-success td {
+  padding: 5px 15px;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+table.table .tr-success td > .budge,
+.table .tr-success td > .budge {
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  bottom: 8px;
+  padding: 3px;
+  font-size: 11px;
+}
+table.table .tr-success:hover,
+.table .tr-success:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+}
+table.table .tr-success:hover,
+.table .tr-success:hover {
+  background-color: #94ff88;
+}
+table.table .tr-warning,
+.table .tr-warning {
+  border: 1px solid #cccccc;
+  background-color: #fffd73;
+}
+table.table .tr-warning td,
+.table .tr-warning td {
+  padding: 5px 15px;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+table.table .tr-warning td > .budge,
+.table .tr-warning td > .budge {
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  bottom: 8px;
+  padding: 3px;
+  font-size: 11px;
+}
+table.table .tr-warning:hover,
+.table .tr-warning:hover {
+  -webkit-transition: 0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+}
+table.table .tr-warning:hover,
+.table .tr-warning:hover {
+  background-color: #fffeb8;
+}
+/*无外边框表格*/
+.table.table-noborder tr th {
+  border: 1px solid transparent!important;
+}
+.table.table-noborder tr td {
+  border-right: 1px solid #34495e;
+  border-top: 1px solid transparent!important;
+  border-bottom: 1px solid transparent!important;
+  border-left: 1px solid transparent!important;
+}
+.table.table-noborder tr td:last-child {
+  border: 1px solid transparent;
+}
+.table.table-noborder-all {
+  border: 1px solid transparent!important;
+}
+.table.table-noborder-all td,
+.table.table-noborder-all tr,
+.table.table-noborder-all th {
+  border: 1px solid transparent!important;
+}
+/*代码样式*/
 /*遮罩层*/
 /*下拉列表*/
 /*导航*/
@@ -622,6 +902,7 @@ button {
   margin: 10px;
   border-left: 4px solid #06cc80;
   overflow: auto;
+  vertical-align: middle;
 }
 /*大字板*/
 /*分隔条*/

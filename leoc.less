@@ -289,9 +289,143 @@ i{
     }
 }
 /*弹出框*/
+
+
 /*消息丸*/
+.budge{
+    border:1px solid @blue;
+    background: @d-blue;
+    display: inline-block;
+    height: 20px;
+    width:30px;
+    border-radius:8px;
+    padding: 6px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    color:@white;
+    &:hover{
+    .info-hover;
+    }
+}
 
 /*列表*/
+ul.ul{
+
+    li{
+
+    }
+}
+
+/*表格*/
+table.table,.table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+    th{
+        padding: 5px 15px;
+        height: 35px;
+        text-align: center;
+        width: 70px;
+        border:1px solid #ccc;        
+    }    
+    tr.tr,.tr{
+    
+    border:1px solid @normal-grey;
+    
+        td{
+            padding: 5px 15px;
+            height: 35px;
+            text-align: center;
+            width: 70px;
+            border:1px solid #ccc;
+            position:relative;
+
+            >.budge{
+                position: absolute;
+                right: 3px;
+                top: 8px;
+                bottom: 8px; //18+6 +11
+                padding: 3px;
+                font-size: 11px;  
+                //background: #000;        
+            }        
+        }
+        &:hover{
+            .transition-color;
+        }
+    }
+    .tr-default{
+        .tr;
+        background-color: rgba(250,250,250,0.8);
+        &:hover{
+            background-color: @white;
+        }        
+    }
+    .tr-danger{
+        .tr;
+        background-color: @m-red;
+        &:hover{
+            background-color: @l-red;
+        }
+    }
+    .tr-smile{
+        .tr;
+        background-color: @m-orange;
+        &:hover{
+            background-color: @l-orange;
+        }
+    }  
+    .tr-info{
+        .tr;
+        background-color: @m-blue;
+        &:hover{
+            background-color: @l-blue;
+        }
+    }   
+    .tr-success{
+        .tr;
+        background-color: @m-green;
+        &:hover{
+            background-color: @l-green;
+        }
+    } 
+    .tr-warning{
+        .tr;
+        background-color: @m-yellow;
+        &:hover{
+            background-color: @l-yellow;
+        }
+    }                
+}
+/*无外边框表格*/
+.table.table-noborder{
+   
+    
+    tr{
+        //border: none!important;
+        th{
+            border:1px solid transparent!important;
+        }
+        td{
+            border-right: 1px solid @d-grey;
+            border-top: 1px solid transparent!important;
+            border-bottom: 1px solid transparent!important;
+            border-left: 1px solid transparent!important;
+        }
+        td:last-child{
+            border:1px solid transparent;
+        }
+    }
+    
+}
+.table.table-noborder-all{
+    border:1px solid transparent!important;
+    td,tr,th{
+        border:1px solid transparent!important;
+    }
+}
+/*代码样式*/
 
 /*遮罩层*/
 
@@ -316,6 +450,7 @@ i{
     margin: 10px; 
     border-left: 4px solid @d-green;
     overflow: auto;
+    vertical-align: middle;
 }
 /*大字板*/
 
