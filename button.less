@@ -1,0 +1,98 @@
+button{
+    outline: none;
+    background-color: #ccc;
+}
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.432;
+    border-radius: 6px;
+    color:#fff;
+    cursor:pointer;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+
+}
+/*激活状态*/
+.btn.active{
+    //
+}
+/*悬浮状态*/
+.btn:hover{
+   
+}
+/*禁用状态*/
+.btn.disabled,.btn.disabled:hover{
+    background-color: #aaa;
+    opacity: 0.6;
+    cursor:not-allowed;
+}
+
+/*情景状态*/
+.btn-default{
+    .btn;
+    .default;
+    &:hover{
+        .default-hover;
+    }
+}
+.btn-danger{
+    .btn;
+    .danger;
+    &:hover{
+        .danger-hover;
+    }    
+}
+.btn-smile{
+    .btn;
+    .smile;
+    &:hover{
+        .smile-hover;
+    }    
+}
+.btn-warning{
+    .btn;
+    .warning;
+    &:hover{
+        .warning-hover;
+    }    
+}
+.btn-success{
+    .btn;
+    .success;
+    &:hover{
+        .success-hover;
+    }    
+}
+.btn-info{
+    .btn;
+    .info;
+    &:hover{
+        .info-hover;
+    }    
+}
+
+/*尺寸大小*/
+.btn.btn-lg,.btn-lg{
+    .btn;
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+    line-height: 1.3333333;
+}
+.btn.btn-sm,.btn-sm{
+    .btn;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    line-height: 1.5;
+}
+.btn.btn-xs,.btn-xs{
+    .btn;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}

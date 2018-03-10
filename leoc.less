@@ -102,32 +102,46 @@ textarea{
           justify-content: center;    
 }
 /********************* 基础样式设置 ******************/
-
+    
 /*基础尺寸设置*/
 //尺寸函数
 
 
 html,body{
     .size(100%,100%);
+    color:#34495E;
+    font-weight: 300;
 }
 
 h1,.h1{
-
+    font-family: 'microsoft yahei';
+    font-weight: 600;
+    font-size: 28px;
 }
 h2,.h2{
-
+    font-family: 'microsoft yahei';
+    font-weight: 400;
+    font-size: 24px;    
 }
 h3,.h3{
-
+font-family: 'microsoft yahei';
+    font-weight: 300;
+    font-size: 20px;
 }
 h4,.h4{
-
+    font-family: 'microsoft yahei';
+    font-weight: 300;
+    font-size: 16px;
 }
 h5,.h5{
-
+    font-family: 'microsoft yahei';
+    font-weight: 600;
+    font-size: 14px;    
 }
 h6,.h6{
-
+font-family: 'microsoft yahei';
+    font-weight: 600;
+    font-size: 12px;       
 }
 
 button{
@@ -245,69 +259,19 @@ i{
 .h-all{
     .h(100%);
 }
+/*容器*/
 
+.container{
+    padding: 15px 20px;
+    margin: 10px;
+    border: 1px solid #eee;
+    min-height:200px;
+    border-radius: 6px;
+}
 /*面板*/
 /*按钮*/
-button{
-    outline: none;
-    background-color: #ccc;
-}
-.btn{
-    display: inline-block;
-    padding: 6px 12px;
-    font-size: 14px;
-    border-radius: 6px;
-    color:#fff;
-    cursor:pointer;
-}
-.btn.active{
-    
-}
-.btn:hover{
-   
-}
-.btn.disabled,.btn.disabled:hover{
-    background-color: #aaa;
-    opacity: 0.6;
-    cursor:not-allowed;
-}
+@import url(button.less);
 
-.btn-default{
-    .btn;
-    .default;
-    &:hover{
-        .default-hover;
-    }
-}
-.btn-danger{
-    .btn;
-    .danger;
-    &:hover{
-        .danger-hover;
-    }    
-}
-
-.btn-smile{
-    .btn;
-    .smile;
-    &:hover{
-        .smile-hover;
-    }    
-}
-.btn-warning{
-    .btn;
-    .warning;
-    &:hover{
-        .warning-hover;
-    }    
-}
-.btn-success{
-    .btn;
-    .success;
-    &:hover{
-        .success-hover;
-    }    
-}
 /*输入框*/
 /*弹出框*/
 /*消息丸*/
@@ -330,43 +294,17 @@ button{
 /*引语*/
 
 /*大字板*/
-/*********************   颜色类     ******************/
-.danger{
-    background-color: #FF0000;
-}
-.danger-hover{
-    background-color: #8B0000;
-}
-.default{
-    background-color: #008B8B;
-}
-.default-hover{
-    background-color: #046E6E;
-}
-.smile{
-    background-color: #FFA500;
-}
-.smile-hover{
-    background-color: #D68B00;
-}
-.warning{
-    background-color: #F0E68C;
-}
-.warning-hover{
-    background-color: #D4C968;
-}
-.success{
-    background-color: #00FA9A;
-}
-.success-hover{
-    background-color: #06CC80;
-}
-.info{
 
+/*分隔条*/
+hr{
+    .default;
 }
+
+/*********************   颜色类     ******************/
+@import url(colors.less);
 /********************* 栅格系统 ******************/
 
-
+@import url(columns.less);
 /********************* 屏幕适配 ******************/
 
 
