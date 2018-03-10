@@ -1,0 +1,114 @@
+table.table,.table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+    th{
+        padding: 5px 15px;
+        height: 35px;
+        text-align: center;
+        width: 70px;
+        border:1px solid #ccc;        
+    }    
+    tr,.tr{
+    
+    border:1px solid @normal-grey;
+    
+        td{
+            padding: 5px 15px;
+            height: 35px;
+            text-align: center;
+            width: 70px;
+            border:1px solid #ccc;
+            position:relative;
+
+            >.budge{
+                position: absolute;
+                right: 3px;
+                top: 8px;
+                bottom: 8px; //18+6 +11
+                padding: 3px;
+                font-size: 11px;  
+                //background: #000;        
+            }        
+        }
+        &:hover{
+            .transition-color;
+        }
+    }
+    .tr-default{
+        .tr;
+        background-color: @d-white;
+        &:hover{
+            background-color: @white;
+        }        
+    }
+    .tr-danger{
+        .tr;
+        background-color: @m-red;
+        &:hover{
+            background-color: @l-red;
+        }
+    }
+    .tr-smile{
+        .tr;
+        background-color: @m-orange;
+        &:hover{
+            background-color: @l-orange;
+        }
+    }  
+    .tr-info{
+        .tr;
+        background-color: @m-blue;
+        &:hover{
+            background-color: @l-blue;
+        }
+    }   
+    .tr-success{
+        .tr;
+        background-color: @m-green;
+        &:hover{
+            background-color: @l-green;
+        }
+    } 
+    .tr-warning{
+        .tr;
+        background-color: @m-yellow;
+        &:hover{
+            background-color: @l-yellow;
+        }
+    }                
+}
+/*无外边框表格*/
+.table.table-noborder{
+   
+    
+    tr{
+        //border: none!important;
+        th{
+            border:1px solid transparent!important;
+        }
+        td{
+            border-right: 1px solid @d-grey;
+            border-top: 1px solid transparent!important;
+            border-bottom: 1px solid transparent!important;
+            border-left: 1px solid transparent!important;
+        }
+        td:last-child{
+            border:1px solid transparent;
+        }
+    }    
+    
+}
+.table.table-noborder-all{
+    border:1px solid transparent!important;
+    td,tr,th{
+        border:1px solid transparent!important;
+    }
+}
+
+ul.ul{
+
+    li{
+    
+    }
+}
