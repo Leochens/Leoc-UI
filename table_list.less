@@ -2,6 +2,7 @@ table.table,.table{
     border-collapse: collapse;
     width: 100%;
     font-size: 15px;
+    border:none;
     th{
         padding: 5px 15px;
         height: 35px;
@@ -10,17 +11,14 @@ table.table,.table{
         border:1px solid #ccc;        
     }    
     tr,.tr{
-    
-    border:1px solid @normal-grey;
-    
         td{
             padding: 5px 15px;
             height: 35px;
             text-align: center;
             width: 70px;
-            border:1px solid #ccc;
+           
             position:relative;
-
+            border:1px solid @normal-grey;
             >.budge{
                 position: absolute;
                 right: 3px;
@@ -78,20 +76,20 @@ table.table,.table{
         }
     }                
 }
-/*无外边框表格*/
-.table.table-noborder{
+/*垂直分割表格*/
+.table.table-vertical-divider{
    
     
     tr{
         //border: none!important;
         th{
-            border:1px solid transparent!important;
+            border:1px solid transparent;
         }
         td{
-            border-right: 1px solid @d-grey;
-            border-top: 1px solid transparent!important;
-            border-bottom: 1px solid transparent!important;
-            border-left: 1px solid transparent!important;
+            border-right: 1px solid @normal-grey;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            border-left: 1px solid transparent;
         }
         td:last-child{
             border:1px solid transparent;
@@ -99,13 +97,36 @@ table.table,.table{
     }    
     
 }
-.table.table-noborder-all{
-    border:1px solid transparent!important;
+/*水平分割表格*/
+.table.table-horizontal-divider{
+    //border:1px solid #ccc;
+    tr > td{
+        border:none;
+    }
+    th{
+        border: none;
+    }
+    tr{
+        border-top:1px solid @normal-grey;
+    }
+    tr:last-child{
+        border-top:1px solid @normal-grey;
+        border-bottom:1px solid @normal-grey;
+        
+    }
+
+}
+/*无外边框表格*/
+
+.table.table-noborder{
+    border:1px solid transparent;
+    tr > td{
+    border:1px solid transparent;   
+    }
     td,tr,th{
-        border:1px solid transparent!important;
+        border:1px solid transparent;
     }
 }
-
 ul.ul{
 
     li{

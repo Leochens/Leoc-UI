@@ -50,6 +50,9 @@ textarea{
     clear: both;
 }
 
+@import url(icon.less);
+
+
 //函数
 .size(@w,@h){
     width: @w;height: @h;
@@ -71,7 +74,7 @@ textarea{
     ::selection {background:@bgc; color:@c;} 
 }
 //兼容性flex
-.flex(){
+.flex{
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -84,11 +87,11 @@ textarea{
           transform: translate(@x, @y);    
 }
 //兼容性
-.transition(@time,@method){
- -webkit-transition: -webkit-transform @time @method;
-  transition: -webkit-transform @time @method;
-  -o-transition: -o-transform @time @method;
-  transition: transform @time @method;    
+.transition(@proto,@time,@method:ease-out){
+ -webkit-transition:  @time @proto @method;
+  transition:  @time @proto @method;
+  -o-transition:  @time @proto @method;
+  transition: @time @proto @method;    
 }
 .transition-color{
 -webkit-transition:0.3s background-color ease-out;
@@ -117,7 +120,7 @@ textarea{
 /*基础尺寸设置*/
 //尺寸函数
 
-
+.selection(@l-pink);
 html,body{
     .size(100%,100%);
     color:@grey;

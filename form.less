@@ -41,7 +41,8 @@
         .focus-box-outline(@blue);
 
     }    
-}.input.input-danger{
+}
+.input.input-danger{
     .input;
     color:@red;
     border-color:@d-red;
@@ -49,7 +50,8 @@
          .focus-box-outline(@red);
 
     }    
-}.input.input-smile{
+}
+.input.input-smile{
     .input;
     color:@orange;
     border-color:@d-orange;
@@ -57,6 +59,57 @@
          .focus-box-outline(@orange);
 
     }    
+}
+.icon-input-right{
+    position: relative;
+    vertical-align: middle;
+    font-size: 1em;
+    font-weight: 400;
+    display: inline-flex;
+    input{
+        .input;
+        padding-right:2.67142857em; 
+        flex: 1 0 auto;
+        margin: 0;
+    }
+    i{
+        cursor: default;
+        position: absolute;
+        line-height: 1;
+        text-align: center;
+        top: 0;
+        right: 0;
+        margin: 0;
+        height: 100%;
+        width: 2.67142857em;
+        opacity: .5;
+        border-radius: 0 .28571429rem .28571429rem 0;
+        -webkit-transition: opacity .3s ease;
+        transition: opacity .3s ease;
+
+        &:before{
+           
+            left: 0;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%;
+            margin-top: -.5em;
+        }
+        pointer-events: none;
+    }
+}
+.icon-input-left{
+    .icon-input-right;
+    input{
+        padding-left: 2.67142857em;
+        
+    }
+    i{
+        right: auto;
+        left: 1px;
+        border-radius: .28571429rem 0 0 .28571429rem;
+    }        
 }
 
 //输入框组
