@@ -1,5 +1,8 @@
-# Leoc --- 一个实用UI框架
+![Leoc UI](imgs/leoc.png)
+
+#Leoc --- 一个实用UI框架
 ---
+
 ### 构建工具
 > 使用less进行编译
 
