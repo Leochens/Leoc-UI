@@ -1,15 +1,21 @@
+.focus-box-outline(@c){
+        border-color: @c;
+        //利用box-shadow模拟outline圆角效果
+        box-shadow: 0 0 3px 1px @c;
+        transition: 0.3s all;    
+}
+
 .input{
     padding: 6px 8px;
     background-color:transparent;
-    border: 2px solid @d-grey;
+    border: 1px solid @d-grey;
     border-radius: 6px;
     height: 28px; 
     width: inherit;
     outline: none;
     color:@grey;
     &:focus{
-        border-color: @grey;
-        transition: 0.3s border-color;
+        .focus-box-outline(@grey);
     }
 }
 .input-lg.input{
@@ -23,8 +29,8 @@
     color:@green;
     border-color:@d-green;
     &:focus{
-        border-color: @green;
-        transition: 0.3s border-color;
+        .focus-box-outline(@green);
+
     }    
 }
 .input.input-info{
@@ -32,24 +38,24 @@
     color:@blue;
     border-color:@d-blue;
     &:focus{
-        border-color: @blue;
-        transition: 0.3s border-color;
+        .focus-box-outline(@blue);
+
     }    
 }.input.input-danger{
     .input;
     color:@red;
     border-color:@d-red;
     &:focus{
-        border-color: @red;
-        transition: 0.3s border-color;
+         .focus-box-outline(@red);
+
     }    
 }.input.input-smile{
     .input;
     color:@orange;
     border-color:@d-orange;
     &:focus{
-        border-color: @orange;
-        transition: 0.3s border-color;
+         .focus-box-outline(@orange);
+
     }    
 }
 

@@ -513,7 +513,7 @@ button {
 .input {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -522,8 +522,10 @@ button {
 }
 .input:focus {
   border-color: #34495e;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #34495e;
+          box-shadow: 0 0 3px 1px #34495e;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input-lg.input {
   height: 35px!important;
@@ -534,7 +536,7 @@ button {
 .input.input-success {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -545,18 +547,22 @@ button {
 }
 .input.input-success:focus {
   border-color: #34495e;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #34495e;
+          box-shadow: 0 0 3px 1px #34495e;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input.input-success:focus {
   border-color: #00fa9a;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #00fa9a;
+          box-shadow: 0 0 3px 1px #00fa9a;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input.input-info {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -567,18 +573,22 @@ button {
 }
 .input.input-info:focus {
   border-color: #34495e;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #34495e;
+          box-shadow: 0 0 3px 1px #34495e;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input.input-info:focus {
   border-color: #6495ed;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #6495ed;
+          box-shadow: 0 0 3px 1px #6495ed;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input.input-danger {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -589,18 +599,22 @@ button {
 }
 .input.input-danger:focus {
   border-color: #34495e;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #34495e;
+          box-shadow: 0 0 3px 1px #34495e;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input.input-danger:focus {
   border-color: #ff0000;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #ff0000;
+          box-shadow: 0 0 3px 1px #ff0000;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input.input-smile {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -611,18 +625,22 @@ button {
 }
 .input.input-smile:focus {
   border-color: #34495e;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #34495e;
+          box-shadow: 0 0 3px 1px #34495e;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input.input-smile:focus {
   border-color: #ffa500;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #ffa500;
+          box-shadow: 0 0 3px 1px #ffa500;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input-group-inline input {
   padding: 6px 8px;
   background-color: transparent;
-  border: 2px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
   border-radius: 6px;
   height: 28px;
   width: inherit;
@@ -633,8 +651,10 @@ button {
 }
 .input-group-inline input:focus {
   border-color: #34495e;
-  -webkit-transition: 0.3s border-color;
-  transition: 0.3s border-color;
+  -webkit-box-shadow: 0 0 3px 1px #34495e;
+          box-shadow: 0 0 3px 1px #34495e;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .input-group-block input,
 .input-group-block .input,
