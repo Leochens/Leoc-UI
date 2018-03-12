@@ -50,12 +50,13 @@ textarea{
     clear: both;
 }
 
-@import url(icon.less);
+@import url(modules/icon.less);
 
 
 //函数
 .size(@w,@h){
     width: @w;height: @h;
+    
 }
 .w(@w)
 {
@@ -174,13 +175,13 @@ i{
 /********************* 自有样式 ******************/
 /*工具类*/
 
-@import url(tools.less);
+@import url(modules/tools.less);
 
 
 /*定值块*/
 
 /*绝对定值*/
-@import url(block.less);
+@import url(modules/block.less);
 /*容器*/
 
 .container{
@@ -236,11 +237,11 @@ i{
 
 /*面板*/
 /*按钮*/
-@import url(button.less);
+@import url(modules/button.less);
 
 
 /*表单*/
-@import url(form.less);
+@import url(modules/form.less);
 
 /*弹出框*/
 
@@ -276,7 +277,7 @@ i{
 
 
 /*表格与列表*/
-@import url(table_list.less);
+@import url(modules/table_list.less);
 /*代码样式*/
 
 /*遮罩层*/
@@ -387,7 +388,7 @@ i{
 /*引语*/
 //bug : 绿条不能自动增大
 //解决 ： 换用border-left
-@import url(quotes.less);
+@import url(modules/quotes.less);
 /*大字板*/
 
 /*分隔条*/
@@ -436,10 +437,10 @@ hr{
 
 }
 /*********************   颜色类     ******************/
-@import url(colors.less);
+@import url(modules/colors.less);
 /********************* 栅格系统 ******************/
 
-@import url(columns.less);
+@import url(modules/columns.less);
 /********************* 屏幕适配 ******************/
 
 
@@ -447,4 +448,4 @@ hr{
 /********************* 兼容性问题解决 ******************/
 
 /*测试**/
-@import url(hack.less);
+@import url(modules/hack.less);
