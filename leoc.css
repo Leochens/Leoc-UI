@@ -2041,6 +2041,38 @@ table.table .tr-warning:hover,
 /*下拉列表*/
 /*导航*/
 /*侧边栏*/
+/*画廊 多图展示*/
+.gallery-item {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  width: 335px;
+  height: 281px;
+  text-align: center;
+}
+.gallery-item img {
+  border: 1px solid #eee;
+  padding: 15px;
+}
+.gallery-item a > img {
+  display: block;
+  border: 1px solid #eee;
+  padding: 15px;
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  padding-bottom: 67.5%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery-col-4 .gallery-item {
+  width: 25%;
+  float: left;
+}
+.gallery-col-5 .gallery-item {
+  width: 20%;
+  float: left;
+}
 /*小卡片*/
 .card {
   padding: 14px;
