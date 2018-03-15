@@ -47,5 +47,73 @@
 &{ @import url(collections/message.less);}
 &{ @import url(collections/quote.less);}
 
+/**
+ * UI collections Card
+ */
+
+/*
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border: 1px solid #a7a7a7;
+  border-radius: 2px;
+}
+.card .card-content {
+  margin: 0;
+  padding: 10px;
+}
+.card .card-image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+*/
+
+@card-margin:0 0 1rem 0;
+@card-border:1px solid #ccc;
+@card-border-radius:.2rem;
+@card-content-margin:0;
+@card-content-padding:1rem;
+@card-image-border:;
+@card-body-font-size:1.5rem;
 
 
+@card-body-padding:0 3rem 2rem 3rem;
+.lc.card{
+    font-size: @card-body-font-size;
+    display: flex;
+    flex-direction: column;
+    margin:@card-margin;
+    border:@card-border;
+    overflow: hidden;
+    flex: 0 1 calc(50% - 0.5rem);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    .content{
+        margin: @card-content-margin;
+        padding: @card-content-padding;
+    }
+    .image{
+        border:@card-image-border;
+    }
+    .body{
+        padding: 0 3rem 2rem 3rem;
+        min-height: 100px;
+        }
+    .header{
+            font-weight: 600;
+            margin: 0;
+            padding: 2rem 3rem 1rem;
+    }   
+    .footer{
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            border-top: 1px solid #dbdbdb;
+            flex: 1;
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 1.5rem;
+    }
+}
