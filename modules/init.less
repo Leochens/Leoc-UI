@@ -1,0 +1,97 @@
+/*
+    执行leoc UI的初始化工作
+ */
+
+
+@charset:'utf8';
+/* 清除默认样式 */
+
+/*清除内外边距*/
+html,body,h1,h2,h3,h4,h5,h6,textarea,input,button,
+small,div,span,ul,ol,li,table,legend,td,tt,th,tr,
+fieldset,blockquote,button,input,select,option,a{
+    margin: 0;
+    padding: 0;
+}
+/*清除a下划线*/
+a{
+    text-decoration: none;
+
+}
+/*扶正斜体*/
+i,em{
+    font-style: normal;
+}
+
+/*清除列表样式*/
+ul,ol,li{
+    list-style: none;
+}
+
+/*链接里的img无边框*/
+img{
+    border: none;
+}
+
+/*表格和div自动换行*/
+table,div{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+button,input{
+    border: none;
+    border: #ddd;
+    outline: none;
+}
+
+
+/*禁止拖动*/
+textarea{
+    resize: none;
+}
+.p{
+    background-color: #333;
+}
+*:before,
+*:after{
+    clear: both;
+}
+//.selection(@l-pink);
+html,body{
+    //.size(100%,100%);
+    //color:@grey;
+    font-weight: 300;
+    font-size: 62.5%;
+}
+
+h1,.h1{
+    font-family: 'microsoft yahei';
+    font-weight: 600;
+    font-size: 28px;
+}
+h2,.h2{
+    font-family: 'microsoft yahei';
+    font-weight: 400;
+    font-size: 24px;    
+}
+h3,.h3{
+font-family: 'microsoft yahei';
+    font-weight: 300;
+    font-size: 20px;
+}
+h4,.h4{
+    font-family: 'microsoft yahei';
+    font-weight: 300;
+    font-size: 16px;
+}
+h5,.h5{
+    font-family: 'microsoft yahei';
+    font-weight: 600;
+    font-size: 14px;    
+}
+h6,.h6{
+font-family: 'microsoft yahei';
+    font-weight: 600;
+    font-size: 12px;       
+}
