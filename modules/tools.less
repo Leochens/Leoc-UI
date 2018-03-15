@@ -1,86 +1,63 @@
-.float-left,.fl{
-    float: left;
+.size(@w,@h){
+    width: @w;height: @h;
+    
 }
-.float-right,.fr{
-    float: right;
+.w(@w)
+{
+    width: @w;
 }
-.float-none,.fn{
-    float: none;
+.h(@h)
+{
+    height: @h;
 }
-.margin-auto,.ma{
-    margin: 0 auto;
-}
-.text-center,.tc{
-    text-align: center;
-}
-
-.radius-3,.r3{
-    border-radius: 3px;
-    &-p{
-        border-radius: 30%;
-    }
-}
-.radius-6,.r6{
-    border-radius: 6px;
-    &-p{
-        border-radius: 60%;
-    }    
-}
-.radius-8,.r8{
-    border-radius: 8px;
-    &-p{
-        border-radius: 80%;
-    }    
-}
-.radius-10,.r10{
-    border-radius: 10px;
-}
-.circle{
-    border-radius: 50%;
-}
-
 .border{
-    border:1px solid #ccc;
-}
 
-.bgc-lred{
-    background-color: @l-red;
 }
-.bgc-mred{
-    background-color: @m-red;
-}
-.bgc-red{
-    background-color: @red;
-}
-.bgc-dred{
-    background-color: @d-red;
-}
+.selection(@bgc,@c:@grey){
+    ::-moz-selection{background:@bgc;color: @c;} 
 
-.direc(@d){
-    &t{
-        margin-top: @d;
-    }
-    &b{
-        margin-bottom: @d;
-    }
-    &l{
-        margin-left: @d;
-    }  
-    &r{
-        margin-right: @d;
-    }            
+    ::selection {background:@bgc; color:@c;} 
 }
-
-.margin-15,.mg15{
-    margin:15px;
-    .direc(15px);   
+//兼容性flex
+.flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;    
 }
-.margin-30,.mg30{
-    margin:30px;
-    .direc(30px);   
+//兼容性
+.transform(@x,@y){
+-webkit-transform: translate(@x, @y);
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);    
 }
-.margin-48,.mg48{
-    margin:48px;
-    .direc(48px);   
-
+//兼容性
+.transition(@proto,@time,@method:ease-out){
+ -webkit-transition:  @time @proto @method;
+  transition:  @time @proto @method;
+  -o-transition:  @time @proto @method;
+  transition: @time @proto @method;    
+}
+.transition-color{
+-webkit-transition:0.3s background-color ease-out;
+  transition: 0.3s background-color ease-out;
+  -o-transition: 0.3s background-color ease-out;
+  transition:0.3s background-color ease-out;
+}
+.translate-3d(@x,@y,@z){
+ -webkit-transform: translate3d(@x,@y,@z);
+            transform: translate3d(@x,@y,@z);    
+}
+.flex-h-center{
+-webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;  
+}
+.flex-v-center{
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      //函数
+    justify-content: center;    
 }

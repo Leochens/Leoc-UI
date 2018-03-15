@@ -1,454 +1,94 @@
-@charset:'utf8';
-/* 清除默认样式 */
+/*
+    ***************************************************
+    *           LEOC UI
+    *           By -- Leochens
+    *           v 2.0 
+    ***************************************************
 
-/*清除内外边距*/
-html,body,h1,h2,h3,h4,h5,h6,textarea,input,button,
-small,div,span,ul,ol,li,table,legend,td,tt,th,tr,
-fieldset,blockquote,button,input,select,option,a{
-    margin: 0;
-    padding: 0;
-}
-/*清除a下划线*/
-a{
-    text-decoration: none;
-
-}
-/*扶正斜体*/
-i,em{
-    font-style: normal;
-}
-
-/*清除列表样式*/
-ul,ol,li{
-    list-style: none;
-}
-
-/*链接里的img无边框*/
-img{
-    border: none;
-}
-
-/*表格和div自动换行*/
-table,div{
-    word-break: break-all;
-    word-wrap: break-word;
-}
-
-button,input{
-    border: none;
-    border: #ddd;
-}
+ */
 
 
-/*禁止拖动*/
-textarea{
-    resize: none;
-}
-
-*:before,
-*:after{
-    clear: both;
-}
-
-@import url(modules/icon.less);
+/*
+    基础加载
+ */
+&{ @import url(modules/init.less);}
+&{ @import url(modules/tools.less);}
 
 
-//函数
-.size(@w,@h){
-    width: @w;height: @h;
+
+/*
+    基本组件
+ */
+
+&{ @import url(modules/icon.less);}
+&{ @import url(modules/button.less);}
+&{ @import url(modules/input.less);}
+&{ @import url(modules/container.less);}
+&{ @import url(modules/divider.less);}
+&{ @import url(modules/image.less);}
+&{ @import url(modules/label.less);}
+&{ @import url(modules/list.less);}
+&{ @import url(modules/table.less);}
+&{ @import url(modules/article.less);}
+&{ @import url(modules/code.less);}
+
+
+/* 
+    集合组件
+ */
+
+&{ @import url(collections/sidebar.less);}
+&{ @import url(collections/navigator.less);}
+&{ @import url(collections/footer.less);}
+&{ @import url(collections/card.less);}
+&{ @import url(collections/menu.less);}
+&{ @import url(collections/form.less);}
+&{ @import url(collections/grid.less);}
+&{ @import url(collections/message.less);}
+&{ @import url(collections/quote.less);}
+
+
+.lc.sidebar{
     
-}
-.w(@w)
-{
-    width: @w;
-}
-.h(@h)
-{
-    height: @h;
-}
-.border{
-
-}
-.selection(@bgc,@c:@grey){
-    ::-moz-selection{background:@bgc;color: @c;} 
-
-    ::selection {background:@bgc; color:@c;} 
-}
-//兼容性flex
-.flex{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;    
-}
-//兼容性
-.transform(@x,@y){
--webkit-transform: translate(@x, @y);
-       -o-transform: translate(@x, @y);
-          transform: translate(@x, @y);    
-}
-//兼容性
-.transition(@proto,@time,@method:ease-out){
- -webkit-transition:  @time @proto @method;
-  transition:  @time @proto @method;
-  -o-transition:  @time @proto @method;
-  transition: @time @proto @method;    
-}
-.transition-color{
--webkit-transition:0.3s background-color ease-out;
-  transition: 0.3s background-color ease-out;
-  -o-transition: 0.3s background-color ease-out;
-  transition:0.3s background-color ease-out;
-}
-.translate-3d(@x,@y,@z){
- -webkit-transform: translate3d(@x,@y,@z);
-            transform: translate3d(@x,@y,@z);    
-}
-.flex-h-center{
--webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;  
-}
-.flex-v-center{
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;    
-}
-/********************* 基础样式设置 ******************/
-    
-/*基础尺寸设置*/
-//尺寸函数
-
-.selection(@l-pink);
-html,body{
-    .size(100%,100%);
-    color:@grey;
-    font-weight: 300;
-}
-
-h1,.h1{
-    font-family: 'microsoft yahei';
-    font-weight: 600;
-    font-size: 28px;
-}
-h2,.h2{
-    font-family: 'microsoft yahei';
-    font-weight: 400;
-    font-size: 24px;    
-}
-h3,.h3{
-font-family: 'microsoft yahei';
-    font-weight: 300;
-    font-size: 20px;
-}
-h4,.h4{
-    font-family: 'microsoft yahei';
-    font-weight: 300;
-    font-size: 16px;
-}
-h5,.h5{
-    font-family: 'microsoft yahei';
-    font-weight: 600;
-    font-size: 14px;    
-}
-h6,.h6{
-font-family: 'microsoft yahei';
-    font-weight: 600;
-    font-size: 12px;       
-}
-
-button{
-
-}
-input{
-
-}
-
-i{
-
-}
-
-
-
-/********************* 自有样式 ******************/
-/*工具类*/
-
-@import url(modules/tools.less);
-
-
-/*定值块*/
-
-/*绝对定值*/
-@import url(modules/block.less);
-/*容器*/
-
-.container{
-    padding: 15px 20px;
-    margin: 10px;
-    border: 1px solid #eee;
-    min-height:200px;
-    border-radius: 6px;
-    .selection(@l-pink);
-}
-.row{
-    width: 100%;
-    div,table,p{
-        display: inline-block;
-        vertical-align: top;
+    //padding-left: 1.5rem;
+    width: 30rem;
+    background-color: ;
+    background-color: #1f1f1f;
+    color: #fff;
+    //height: 60rem;
+    .header{
+        font-size: 2rem;
     }
-    img,span{
-        vertical-align: middle;
-    }
-
-}
-.container.article{
-    padding: 48px;
-    border:1px solid #eee;
-    border-radius: 3px;
-    p{
-        line-height: 1.5;
-        text-align: left;
-        text-indent: 1.4rem;
-    }
-    h1{
-        font-size: 35px;
-        margin: 3px 0;
-        margin: 10px 0;
-    }
-    hr{
-        background-color: @l-grey;
-        border:1px solid @l-grey;
-    }
-    .cap{
-        text-transform: uppercase;
-    }
-    .low{
-        text-transform: lowercase;
-    }
-    
-}
-.container.shadow{
-   box-shadow:  0 2px 4px 0 rgba(34,36,38,.12), 
-   0 2px 10px 0 rgba(34,36,38,.15);
-    
-}
-
-/*面板*/
-/*按钮*/
-@import url(modules/button.less);
-
-
-/*表单*/
-@import url(modules/form.less);
-
-/*弹出框*/
-
-
-/*消息丸*/
-.budge{
-    border:1px solid @blue;
-    background: @d-blue;
-    display: inline-block;
-    height: 20px;
-    width:30px;
-    border-radius:8px;
-    padding: 6px;
-    line-height: 20px;
-    font-weight: 600;
-    text-align: center;
-    color:@white;
-    cursor: pointer;
-    &:hover{
-        .transition-color;
-        .info;
-    }
-}
-.budge.danger{
-    border:1px solid @red;
-    &:hover{
-        .transition-color;
-        border:1px solid @m-red;
-
-        background-color: @m-red ;
-    }
-}
-
-
-/*表格与列表*/
-@import url(modules/table_list.less);
-/*代码样式*/
-
-/*遮罩层*/
-
-/*下拉列表*/
-/*导航*/
-/*侧边栏*/
-
-/*画廊 多图展示*/
-@import url(modules/gallery.less);
-
-/*小卡片*/
-
-.card{
-    padding: 14px;
-    min-height: 100px;
-    border:1px solid #ccc;
-    border-radius: 6px;
-    min-width: 200px;
-    max-width: 400px;
-    box-sizing: border-box;
-
-    h3.head,.head{
-        .h3;
-    }
-    p.content,p{
-        line-height: 1.3;
-    }
-    h3.foot,h3{
-        .h3;
-    }
-    hr{
-       .default-hover;
-    }
-    //默认占满宽
-    img{
-        border:1px solid transparent;
-        width: 100%;
-        border-radius: inherit;
-    }
-    button{
-        .btn;
-        .btn-info;
-        width: 100%;
-    }
-
-}
-//内置图片尺寸偏移问题
-//将图片的border值为none
-//border-radius值为inherit
-//父级的border-top值为none 为了显示图片的轮廓没有瑕疵
-.card.figure{
-    padding: 0;
-    padding-bottom: 6px;
-    border-top: none;/*note*/
-    img{
-        padding-top: -1px;
-        border-radius: inherit;
-        height: auto;
-        border:none;
-        width: 100%;
-    }
-}
-.card.recommend{
-    
-    @pd:12px;
-    padding: 0 0 15px 0;
-    border-top: none;/*note*/
-
-    img{
-        display: block;
-        border-radius: inherit;
-        padding-top: -1px;
-        border:none;
-        height: auto;
-        width: 100%;
-
-    }
-    span{
-        .h4;
-        padding: 3px @pd; 
-        font-weight: 500;
-    }
-    div.mark{
-        display: block;
-        color:@m-grey;
-        padding: 0 @pd;
-        font-size: 12px;
-    }
-    p.discribe{
-        font-size: 12px;
-        padding:0 @pd;
-        display: block;
-        font-weight: 400;
-    }
-    div.extra{
-        .h4;
-        padding: 0 @pd;
-        display: block;
-        color: @m-grey;
-        line-height: 1.6;
-        border-top: 1px solid @m-grey;
+    .logo{
         
     }
 
-}
-/*轮播图*/
+    ul{
+        color: #fff;
+        font-size: 1.5rem;
+        li{
+            margin: 0 .3rem;
+            padding: 1rem 1rem;
+            border-left: .3rem solid transparent;
+            
+            &:hover{
+            transition:border-left-color .3s  ease;
+            border-left: .3rem solid #fff;
+            background-color: #555;
+            }
+            a{
+                color: inherit;
+                &:visit{
+                background-color: #666;
 
-/*搜索框*/
-
-/*引语*/
-//bug : 绿条不能自动增大
-//解决 ： 换用border-left
-@import url(modules/quotes.less);
-/*大字板*/
-
-/*分隔条*/
-hr{
-    background-color: @m-grey;
-}
-/*可以插入文本的分割线*/
-.hr-content{
-    &:before,
-    &:after{
-        content: "";
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAACCAYAAACuTHuKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OThBRDY4OUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OThBRDY4QUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5OEFENjg3Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5OEFENjg4Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VU513gAAADVJREFUeNrs0DENACAQBDBIWLGBJQby/mUcJn5sJXQmOQMAAAAAAJqt+2prAAAAAACg2xdgANk6BEVuJgyMAAAAAElFTkSuQmCC);
-        display: table-cell;
-        position: relative;
-        top: 50%;
-        width: 50%;
-        background-repeat: no-repeat;
-        background-position: right 1em top 50%;
-    } 
-    &:after{
-        background-position: left 1em top 50%;
-
-    }   
-    white-space: nowrap;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    display: table;
-    line-height: 1;
-   
-    .item{
-        .h5;
+                }
+            }
+        }
     }
+
+    .footer{
+        font-size: 2rem;
+        //padding: .6rem 3rem;
+    }
+    
 }
-/*无间距分割线*/
-.hr-inblock{
-    border-top:1px solid @grey; 
-    border-bottom:1px solid transparent; 
-    height: 0;
-    padding: 0;
-    letter-spacing: 0.05rem;
-    line-height: 1;
-    font-weight: 700;
-    margin: 0;
-    display: block;
-
-}
-/*********************   颜色类     ******************/
-@import url(modules/colors.less);
-/********************* 栅格系统 ******************/
-
-@import url(modules/columns.less);
-/********************* 屏幕适配 ******************/
-
-
-
-/********************* 兼容性问题解决 ******************/
-
-/*测试**/
-@import url(modules/hack.less);

@@ -1,0 +1,75 @@
+/**
+ * UI table
+ */
+
+//table宽高
+@table-width:;
+@table-height:;
+
+//table整体字体
+@table-font-size:2rem;
+@table-color: #111111;
+@table-text-align: center;
+@table-font-weight: 300;
+
+//table颜色
+@table-bgc: none;
+@table-th-bgc: #e6e6e6;
+@table-cell-hover-color:#eee;
+
+//table边框
+@table-border:0.1rem solid #e6e6e6;
+@table-th-border:0.1rem solid #e6e6e6;
+@table-tr-border:0.1rem solid #e6e6e6;
+@table-td-border:0.1rem solid #e6e6e6;
+@table-border-collapce:collapse;
+@table-border-radius: 0.3rem;
+
+//table边距
+@table-td-padding:1.5rem;
+@table-th-padding:1.5rem;
+@table-tr-padding:1.5rem;
+@table-margin:1.5rem;
+
+//单元格宽高
+@table-td-width:10rem;
+@table-td-height:;
+
+.lc.table{
+font-size:@table-font-size;
+color: @table-color;
+text-align:@table-text-align;
+font-weight:@table-font-weight;
+background-color:@table-bgc;
+border:@table-border; 
+border-collapse:@table-border-collapce;
+border-radius:@table-border-radius;
+margin: @table-margin;
+height: @table-height;
+width: @table-width;
+    th{
+        border:@table-th-border;
+        padding: @table-th-padding;
+        background-color: @table-th-bgc;
+    }
+    tr{
+        border:@table-tr-border;
+        padding: @table-tr-padding;
+    }
+    td{
+        border:@table-td-border;
+        padding: @table-td-padding;
+        width:@table-td-width;
+        height: @table-td-height;
+        &:hover{
+            background-color: @table-cell-hover-color;
+        }
+    }        
+}
+
+//100%宽表格
+.lc.table.all-screen{
+    //@table-td-width:6rem;
+    .lc.table;
+    @table-width:100%;
+}

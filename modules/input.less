@@ -1,0 +1,74 @@
+
+
+
+/*基础*/
+
+@input-height:3rem;
+@input-width:;
+@input-font-size:1.3rem;
+@input-padding-left: 1rem;
+@input-padding-right: 1rem;
+@input-padding-top: 0.6rem;
+@input-padding-bottom: 0.6rem;
+@input-text-color:#111111;
+@input-display:inline-block;
+@input-border:1px solid #111111;
+@input-border-radius:0.2rem;
+@input-margin-left:1rem;
+@input-margin-right:1rem;
+@input-margin-top:1rem;
+@input-margin-bottom:1rem;
+@input-background:;
+
+
+
+.lc.input{
+    height: @input-height;
+    //width: 100%;
+    font-size: @input-font-size;
+    display: @input-display;
+    cursor: text;
+    padding: @input-padding-top
+            @input-padding-right 
+            @input-padding-bottom
+            @input-padding-left;
+    
+    border: @input-border;
+    border-radius: @input-border-radius;
+    margin: @input-margin-left
+            @input-margin-right
+            @input-margin-top
+            @input-margin-bottom;
+    color: @input-text-color;
+    &.vertical{
+        display: block;
+    }
+}
+
+.lc.input.lg{
+    height: @input-height*1.2;
+    font-size: @input-font-size*1.2;
+    padding:@input-padding-top*1.2
+            @input-padding-right *1.2
+            @input-padding-bottom*1.2
+            @input-padding-left*1.2;
+}
+
+.lc.input.sm{
+    height: @input-height*0.8;
+    font-size: @input-font-size*0.8;
+    padding:@input-padding-top*0.8
+            @input-padding-right *0.8
+            @input-padding-bottom*0.8
+            @input-padding-left*0.8;
+}
+
+/**/
+
+.input-group{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+
