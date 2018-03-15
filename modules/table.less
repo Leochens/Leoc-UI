@@ -14,13 +14,14 @@
 
 //table颜色
 @table-bgc: none;
+@table-th-bgc: #e6e6e6;
 @table-cell-hover-color:#eee;
 
 //table边框
-@table-border:0.1rem solid #333333;
-@table-th-border:0.1rem solid #333333;
-@table-tr-border:0.1rem solid #333333;
-@table-td-border:0.1rem solid #333333;
+@table-border:0.1rem solid #e6e6e6;
+@table-th-border:0.1rem solid #e6e6e6;
+@table-tr-border:0.1rem solid #e6e6e6;
+@table-td-border:0.1rem solid #e6e6e6;
 @table-border-collapce:collapse;
 @table-border-radius: 0.3rem;
 
@@ -49,7 +50,7 @@ width: @table-width;
     th{
         border:@table-th-border;
         padding: @table-th-padding;
-
+        background-color: @table-th-bgc;
     }
     tr{
         border:@table-tr-border;

@@ -1,0 +1,73 @@
+/**
+ * UI collections Card
+ */
+
+
+/*宽高*/
+@card-width:30rem;
+@card-body-min-height: 10rem;
+@card-footer-height:3rem;
+
+/*边距*/
+@card-margin:0 0 2rem 0;
+@card-body-padding:0 3rem 2rem 3rem;
+@card-content-margin:0;
+@card-content-padding:1rem;
+@card-header-padding:2rem 3rem 1rem;
+
+/*边框*/
+@card-border:1px solid #ccc;
+@card-border-radius:.2rem;
+@card-image-border:;
+@card-header-margin:0;
+
+/*其他*/
+@card-body-font-size:1.5rem;
+@card-box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+@card-header-font-weight:600;
+@card-footer-font-size:1.5rem;
+
+
+.lc.card{
+    width: @card-width;
+    font-size: @card-body-font-size;
+    display: flex;
+    flex-direction: column;
+    margin:@card-margin;
+    border:@card-border;
+    overflow: hidden;
+    flex: 0 1 ~'calc(50% - 0.5rem)';
+    box-shadow: @card-box-shadow;
+    .content{
+        margin: @card-content-margin;
+        padding: @card-content-padding;
+    }
+    .image{
+        border:@card-image-border;
+    }
+    .body{
+        padding: @card-body-padding;
+        min-height:@card-body-min-height;
+        }
+    .header{
+            font-weight: @card-header-font-weight;
+            margin:@card-header-margin;
+            padding: @card-header-padding;
+    }   
+    .footer{
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            border-top: 1px solid #dbdbdb;
+            flex: 1;
+            height: @card-footer-height;
+            line-height: @card-footer-height;
+            font-size: @card-footer-font-size;
+    }
+}
+
+/* 容器里的card宽占满 */
+div[class*="col"]> .card{
+    .lc.card;
+    width: 100%;
+}

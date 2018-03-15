@@ -60,3 +60,12 @@
   outline: 3px solid #f00;
   border-color: transparent;
 }
+/**/
+.btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
